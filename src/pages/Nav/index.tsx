@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import classnames from 'classnames';
 import { Menu } from 'antd';
 import type { MenuProps } from 'antd';
-import { MailOutlined, YuqueOutlined, MenuOutlined } from '@ant-design/icons';
+import { MailOutlined, YuqueOutlined, SlackOutlined, MenuOutlined } from '@ant-design/icons';
 import styles from './index.less'
 
 type Props = {
@@ -50,7 +50,8 @@ export default function Nav(props: Props) {
                 ],
                 'group'),
         ]),
-        getItem('My', 'my', <YuqueOutlined />)
+        getItem('My', 'my', <YuqueOutlined />),
+        getItem('用户中心', 'user', <SlackOutlined />)
     ]
     function handleMenu(obj: { keyPath: string[], key: string }) {
         const arr: string[] = [...obj.keyPath];
