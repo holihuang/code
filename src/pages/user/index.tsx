@@ -18,7 +18,7 @@ function User(props: Props) {
     }
     return (
         <div>
-            <div>这是用户中心</div>
+            <div>欢迎来到这是用户中心</div>
             <div>{add.count}</div>
             <Button onClick={handleAdd}>+</Button>
         </div>
